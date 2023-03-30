@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background: linear-gradient(90deg, rgb(21, 21, 21), rgb(48, 27, 63), rgb(60, 65, 92), rgb(180, 165, 165));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header {
+    width: 100%;
+    height: 10rem;
+    background-image: url('/Assets/bannerrickandmorty.png');
+    background-size: contain;
+}
+
+h1 {
+    font-size: 5rem;
+    text-shadow: 0 0 15 rgb(180, 165, 165);
+    color: rgb(60, 65, 92);
+    font-family: 'Red Hat Display', sans-serif;
+    animation: tittle 3s infinite;
+
+
+}
+
+@keyframes tittle {
+    50%{
+        text-shadow: 0 0 15 rgb(60, 65, 92);
+        color: rgb(180, 165, 165);
+
+    }
+}
+
+hr {
+    width: 90%;
+    margin: 1rem;
+
+}
+
+main {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.finder-character {
+    width: 30rem;
+    height: 1rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: rgb(48, 27, 63);
+    padding: 1rem;
+    color: rgb(180, 165, 165);
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.containerCards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-character {
+    width: 24rem;
+    height: 13rem;
+    background-color: rgb(180, 165, 165);
+    border: groove 5px rgb(60, 65, 92);
+    margin: 1rem;
+    display: flex;
+
+}
+
+.card-character > img {
+    width: 50%;
+    height: 100%;
+
+}
+
+.card-character > .description-card {
+    width: 50%;
+    height: 100%;
+    display: flexbox;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.description-card > h2 {
+    text-align: center;
+    color: rgb(60, 65, 92);
+    text-shadow: 0 0 15px rgb(180, 165, 165 );
+}
+
+.description-card > p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: rgb(60, 65, 92);
+    margin-top: 0.5rem;
+}
+
+footer {
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+footer > a {
+    color: rgb(180, 165, 165);
+}
